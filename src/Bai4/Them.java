@@ -10,5 +10,5 @@ package Bai4;
  * @author quoccuong
  */
 public class Them {
-    String="Anh Cường";
+    String a="Anh Cường";
 }

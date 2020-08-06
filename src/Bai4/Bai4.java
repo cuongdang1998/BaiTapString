@@ -55,10 +55,27 @@ public class Bai4 {
         }
         System.out.println(kq);
     }
-    public void tinhHieu2(String a, String b){
-        if(a.length()>=b.length()){
-            System.out.println(tinh(a,b)); 
+    public boolean isLarger(String a, String b){
+        if(a.length()>b.length()){
+            return true;
+        }else if(a.length()<b.length()) {
+            return false;
         }else{
+            if(a.compareTo(b)>0){
+                 return true;
+            }else if(a.compareTo(b)<0){
+                return false;
+            }else{
+                return true;
+            }
+        }
+    }
+    public void tinhHieu2(String a, String b){
+        if(isLarger(a,b)){
+            
+            System.out.println(tinh(a,b)); 
+        }else {
+            //System.out.println(a+"<"+b);
             System.out.println("-"+tinh(b,a));
         }
     }
